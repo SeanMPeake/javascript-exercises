@@ -1,6 +1,10 @@
 const reverseString = function(str) {
+    // let revStr = [...str];
+    // revStr = revStr.reverse();
+    // revStr = revStr.join('');
+    // return revStr;
+    return [...str].reverse().join('');
 
-    
     // let reverseStr = str.split('');
     // reverseStr = reverseStr.reverse();
     // reverseStr = reverseStr.join('');
