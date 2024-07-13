@@ -1,11 +1,14 @@
-const removeFromArray = function(arr, num, num2 = null) {
-    let newArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== num && arr[i] !== num2) {
-            newArray.push(arr[i]);
+const removeFromArray = function(arr, ...nums) {
+
+    const newArray = [];
+    
+    arr.forEach((item) => {
+        if (!nums.includes(item)) {
+            newArray.push(item);
         }
-    }
+    });
     return newArray;
+
 };
 
 // Do not edit below this line
